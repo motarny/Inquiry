@@ -1,0 +1,1 @@
+<input type="text" class="number" id="question_{$questionId}" name="question_{$questionId}" value="{$autofill}"/>

@@ -1,0 +1,217 @@
+body {
+	margin: 20px;
+	padding: 0;
+	font-family: Arial;
+	font-size: 14px;
+	color: #000000;
+	background: #ffffff;
+}
+
+.clear {
+	clear: both;
+}
+
+div.header {
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+	border-bottom: 2px solid black;
+	font-family: Arial;
+}
+
+div.header div {
+	margin-bottom: 5px;
+}
+
+div.header div.title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+div.header div.description {
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+div.mainContent {
+	width: 800px;
+	margin: 0 auto;
+	border: 1px dotted #b0b0b0;
+	padding: 20px;
+}
+
+div.mainContent div.header {
+	
+}
+
+/* logowanie */
+div.essentialLogin {
+	margin: 30px;
+}
+
+div.essentialLogin div.info {
+	margin-bottom: 30px;
+	font-size: 17px;
+	color: #909090;
+}
+
+div.essentialLogin div.element {
+	margin-bottom: 10px;
+}
+
+div.essentialLogin label {
+	width: 100px;
+	display: inline-block;
+	text-align: right;
+	font-size: 19px;
+}
+
+div.essentialLogin input {
+	font-size: 20px;
+	padding: 4px;
+}
+
+div.essentialLogin div.submit {
+	margin-top: 20px;
+	text-align: left;
+	margin-left: 105px;
+}
+
+div.loginMessage {
+	background: yellow;
+	padding: 30px;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+
+div.info label {
+	width: 100%;
+	text-align: left;
+	color: #000000;
+	font-size: 24px;
+	margin-bottom: 3px;
+}
+
+div.questionContainer {
+	margin-bottom: 30px;
+	background: #f0f0f0;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+div.query {
+	font-size: 15px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+div.answer {
+	margin: 5px 30px 0 30px;
+	line-height: 1.5;
+	font-size: 13px;
+}
+
+div.answer_option:hover {
+	cursor: pointer;
+	background: #00B454;
+	color: #ffffff;
+}
+
+div.answer_option {
+	padding: 4px;
+	border-radius: 10px;
+}
+
+div.answer textarea {
+	width: 90%;
+	height: 70px;
+}
+
+div.extras {
+	display: none;
+}
+
+div.extras {
+	margin: 5px 10px 5px 35px;
+	font-style: italic;
+}
+
+div.extras input[type=text] {
+	width: 500px;
+	margin-left: 5px;
+	padding: 4px;
+	border-radius: 5px;
+	border: 1px solid #909090;
+}
+
+div.extrasSet {
+	border-bottom: 1px dotted #909090;
+	padding-bottom: 5px;
+	margin-bottom: 5;
+	text-align: right;
+}
+
+div.questionContainer input:after {
+	display: block;
+}
+
+div.agreement {
+	float: right;
+	text-align: right;
+	font-size: 11px;
+	margin: -10px;
+	margin-top: 10px;
+	color: #905050;
+}
+
+div.agreement_all {
+	text-align: center;
+	margin: 10px;
+	font-weight: bold;
+	line-height: 17px;
+	background: #ffffe0;
+	padding: 15px;
+}
+
+div.agreement_all button {
+	display: inline-block;
+	font-size: 11px;
+	margin: 5px;
+}
+
+div.queryExtra.checkbox {
+	text-align: left;
+	margin-left: 10px;
+}
+
+div.notallowed {
+	background: yellow;
+	padding: 30px;
+	font-weight: bold;
+}
+
+div.thanks {
+	font-size: 20px;
+	text-align: center;
+	line-height: 27px;
+	margin: 40px 0;
+}
+
+div.savedInfo {
+	text-align: center;
+	margin: 20px;
+	font-size: 19px;
+	line-height: 22px;
+}
+
+div.questionContainer div.index {
+	float: left;
+	width: 30px;
+}
+
+div.questionContainer div.queryTxt {
+	float: left;
+	width: 720px;
+}

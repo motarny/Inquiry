@@ -1,0 +1,1 @@
+<textarea id="question_{$questionId}" name="question_{$questionId}">{$autofill}</textarea>

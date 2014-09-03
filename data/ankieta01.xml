@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<inquiry>
+
+	<info>
+		<startdate>wrzesień, 2014 r.</startdate>
+		<title>ANKIETA "Testowa ankieta nr 1"</title>
+		<description>
+			Ankieta przeznaczona do testowania generatora ankiet.
+		</description>
+		<footer>
+		</footer>
+	</info>
+
+	<questions>
+
+		<question id="p01" query="Płeć:" type="oneofmany" autofill="plec">
+			<answers>
+				<answer value="k" description="kobieta,"></answer>
+				<answer value="m" description="mężczyzna."></answer>
+			</answers>
+		</question>
+
+		<question id="p02" query="Wiek:" type="number" autofill="wiek" />
+
+		<question id="p03"
+			query="Rok ukończenia Szkoły Podstawowej nr 3 w Stargardzie Szczecińskim:"
+			type="date_year" autofill="absolwentrok" />
+
+		<question id="p04"
+			query="Po ukończeniu szkoły podstawowej (prosimy wybrać wszystkie odnoszące się do Pana/-i odpowiedzi):"
+			type="manyofmany">
+			<answers>
+				<answer value="gimnazjum" description="podjąłem/-ęłam naukę w gimnazjum;">
+					<extras>
+						<set>
+							<extra field="nazwa" query="nazwa i miejscowość:" type="text" />
+							<extra field="profil" query="profil klasy:" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer value="liceum" description="podjąłem/-ęłam naukę w liceum;">
+					<extras>
+						<set>
+							<extra field="nazwa" query="nazwa i miejscowość:" type="text" />
+							<extra field="profil" query="profil klasy:" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer value="technikum" description="podjąłem/-ęłam naukę w technikum;">
+					<extras>
+						<set>
+							<extra field="nazwa" query="nazwa i miejscowość:" type="text" />
+							<extra field="profil" query="profil klasy:" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer field="zawodowa" value="szkoła zawodowa"
+					description="podjąłem/-ęłam naukę w szkole zawodowej;">
+					<extras>
+						<set>
+							<extra field="nazwa" query="nazwa i miejscowość:" type="text" />
+							<extra field="profil" query="profil klasy:" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer field="ponadlicealna" value="szkoła ponadlicealna"
+					description="podjąłem/-ęłam naukę w szkole ponadlicealnej (studium);">
+					<extras>
+						<set>
+							<extra field="nazwa" query="nazwa i miejscowość:" type="text" />
+							<extra field="profil" query="profil klasy:" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer field="licencjackie" value="studia licencjackie"
+					description="podjąłem/-ęłam naukę na studiach licencjackich;">
+					<extras>
+						<set>
+							<extra field="nazwa" query="nazwa i miejscowość:" type="text" />
+							<extra query="kierunek:" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer field="magisterskie" value="studia magisterskie"
+					description="podjąłem/-ęłam naukę na studiach magisterskich;">
+					<extras>
+						<set>
+							<extra field="nazwa" query="nazwa i miejscowość:" type="text" />
+							<extra query="kierunek:" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer value="inne" description="podjąłem/-ęłam naukę w/na:">
+					<extras>
+						<set>
+							<extra field="nazwa1" query="nazwa i miejscowość:" type="text" />
+							<extra field="kierunek1" query="kierunek:" type="text" />
+						</set>
+						<set>
+							<extra field="nazwa2" query="nazwa i miejscowość:" type="text" />
+							<extra field="kierunek2" query="kierunek:" type="text" />
+						</set>
+						<set>
+							<extra field="nazwa3" query="nazwa i miejscowość:" type="text" />
+							<extra field="kierunek3" query="kierunek:" type="text" />
+						</set>
+						<set>
+							<extra field="nazwa4" query="nazwa i miejscowość:" type="text" />
+							<extra field="kierunek4" query="kierunek:" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer field="niepodjalem" value="nie podjąłem nauki"
+					description="nie podjąłem/-ęłam nauki.">
+					<extras>
+						<set>
+							<extra field="dlaczego" query="Dlaczego?" type="text" />
+						</set>
+					</extras>
+				</answer>
+			</answers>
+		</question>
+
+		<question id="p05"
+			query="Czy rozwija Pan/-i swoje zainteresowania lub zdolności?" type="oneofmany">
+			<answers>
+				<answer value="tak" description="Tak.">
+					<extras>
+						<set>
+							<extra field="jakie" query="Jakie?" type="text" />
+							<extra field="gdzie" query="Gdzie dokładnie?" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer value="nie" description="Nie.">
+					<extras>
+						<set>
+							<extra field="dlaczego" query="Dlaczego?" type="text" />
+						</set>
+					</extras>
+				</answer>
+			</answers>
+		</question>
+
+		<question id="p06" query="Jakie obecnie ma Pan/-i wykształcenie?"
+			type="oneofmany">
+			<answers>
+				<answer value="podstawowe" description="Podstawowe."></answer>
+				<answer value="zawodowe" description="Zawodowe."></answer>
+				<answer value="średnie" description="Średnie."></answer>
+				<answer value="średnie techniczne" description="Średnie techniczne."></answer>
+				<answer value="wyższe zawodowe (licencjat)" description="Wyższe zawodowe (licencjat)."></answer>
+				<answer value="wyższe" description="Wyższe."></answer>
+				<answer value="inne" description="Inne.">
+					<extras>
+						<set>
+							<extra field="jakie" query="Jakie?" type="text" />
+						</set>
+					</extras>
+				</answer>
+			</answers>
+		</question>
+
+		<question id="p07" query="Ma Pan/-i zamiar dalej się uczyć?"
+			type="oneofmany">
+			<answers>
+				<answer value="tak" description="Tak."></answer>
+				<answer value="nie" description="Nie."></answer>
+				<answer value="nie wiem" description="Nie wiem."></answer>
+			</answers>
+		</question>
+
+		<question id="p08" query="Czy obecnie uczy się Pan/-i?" type="oneofmany">
+			<answers>
+				<answer value="tak" description="Tak."></answer>
+				<answer value="nie" description="Nie."></answer>
+			</answers>
+		</question>
+
+		<question id="p09" query="Pracuje Pan/-i zawodowo?" type="oneofmany">
+			<answers>
+				<answer value="tak" description="Tak."></answer>
+				<answer value="nie" description="Nie."></answer>
+			</answers>
+		</question>
+
+		<question id="p10" query="Jaki zawód obecnie Pan/-i wykonuje?"
+			type="oneofmany">
+			<answers>
+				<answer field="zgodny" value="zgodny z wyuczonym"
+					description="Zgodny z wyuczonym.">
+					<extras>
+						<set>
+							<extra field="jaki" query="Jaki?" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer field="niezgodny" value="niezgodny z wyuczonym"
+					description="Niezgodny z wyuczonym.">
+					<extras>
+						<set>
+							<extra field="jaki" query="Jaki?" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer value="nie dotyczy"
+					description="Pytanie mnie nie dotyczy, bo nie mam jeszcze zawodu."></answer>
+				<answer value="nie dotyczy - bezrobotny"
+					description="Pytanie mnie nie dotyczy, bo jestem bezrobotny/-a."></answer>
+			</answers>
+		</question>
+
+		<question id="p11"
+			query="Czy wyuczony przez Pana/-nią zawód jest tym wymarzonym?" type="oneofmany">
+			<answers>
+				<answer value="tak" description="Tak."></answer>
+				<answer value="nie" description="Nie.">
+					<extras>
+						<set>
+							<extra field="dlaczego" query="Dlaczego?" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer value="nie dotyczy" description="Pytanie mnie jeszcze nie dotyczy."></answer>
+			</answers>
+		</question>
+
+		<question id="p12"
+			query="Prowadzi Pan/-i własną działalność gospodarczą?" type="oneofmany">
+			<answers>
+				<answer value="tak" description="Tak.">
+					<extras>
+						<set>
+							<extra field="jaka" query="Jaką?" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer field="zamierzam" value="nie, ale zamierzam"
+					description="Nie, ale zamierzam.">
+					<extras>
+						<set>
+							<extra field="jaka" query="Jaką?" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer field="niezamierzam" value="nie i nie zamierzam"
+					description="Nie i nie zamierzam.">
+					<extras>
+						<set>
+							<extra field="dlaczego" query="Dlaczego?" type="text" />
+						</set>
+					</extras>
+				</answer>
+				<answer value="nie dotyczy" description="Pytanie mnie jeszcze nie dotyczy."></answer>
+			</answers>
+		</question>
+
+		<question id="p13"
+			query="Co uważa Pan/-i za swoje najważniejsze, czy też największe sukcesy edukacyjne, zawodowe, osobiste lub związane z rozwijanymi zainteresowaniami?"
+			type="textarea" autofill="my_best_success" />
+
+		<question id="p14"
+			query="Proszę zaznaczyć wszystkie preferowane przez Pana/-nią formy utrzymywania kontaktu z naszą szkołą i rówieśnikami z klasy."
+			type="manyofmany">
+			<answers>
+				<answer value="email" description="Poczta elektroniczna."></answer>
+				<answer value="facebook" description="Facebook."></answer>
+				<answer value="portal nasza klasa" description="Portal &quot;Nasza Klasa&quot;."></answer>
+				<answer value="telefon" description="Rozmowa telefoniczna."></answer>
+				<answer value="spotkania" description="Spotkania."></answer>
+				<answer value="inne" description="Inne.">
+					<extras>
+						<set>
+							<extra field="jakie" query="Jakie?" type="text" />
+						</set>
+					</extras>
+
+				</answer>
+			</answers>
+		</question>
+
+		<question id="p15"
+			query="Czy utrzymuje Pan/-i kontakt z osobami ze szkoły podstawowej?"
+			type="oneofmany">
+			<answers>
+				<answer value="tak" description="Tak:">
+					<extras>
+						<set>
+							<extra field="nauczyciele" value="tak" query="z nauczycielami,"
+								type="checkbox" />
+							<extra field="koledzy" value="tak" query="z koleżankami, kolegami."
+								type="checkbox" />
+						</set>
+					</extras>
+				</answer>
+				<answer field="zamierzam" value="nie, ale zamierzam"
+					description="Nie, ale zamierzam:">
+					<extras>
+						<set>
+							<extra field="nauczyciele" query="z nauczycielami," type="checkbox" />
+							<extra field="koledzy" query="z koleżankami, kolegami."
+								type="checkbox" />
+						</set>
+					</extras>
+				</answer>
+				<answer value="nie i nie zamierzam" description="Nie i nie zamierzam."></answer>
+			</answers>
+		</question>
+
+		<question id="p16"
+			query="Czy myśli Pan/-i, że będzie korzystać z oferty przygotowywanej przez naszą szkołę dla absolwentów, w której będą na przykład: spotkania z nauczycielami, kolegami i koleżankami, konkursy, prezentacja sukcesów, udzielanie wywiadów, informacje w zakładce na szkolnej stronie internetowej &quot;Nasi absolwenci&quot; itp.?"
+			type="oneofmany">
+			<answers>
+				<answer value="tak" description="Tak."></answer>
+				<answer value="raczej tak" description="Raczej tak."></answer>
+				<answer value="raczej nie" description="Raczej nie."></answer>
+				<answer value="nie" description="Nie."></answer>
+				<answer value="nie wiem" description="Nie wiem."></answer>
+			</answers>
+		</question>
+
+		<question id="p17"
+			query="Czy chciałby/-łaby Pan/-i współpracować z naszą szkołą?" type="oneofmany">
+			<answers>
+				<answer value="tak" description="Tak."></answer>
+				<answer value="raczej tak" description="Raczej tak."></answer>
+				<answer value="raczej nie" description="Raczej nie."></answer>
+				<answer value="nie" description="Nie."></answer>
+				<answer value="nie wiem" description="Nie wiem."></answer>
+			</answers>
+		</question>
+
+		<question id="p18"
+			query="Co może Pan/-i zaoferować w ramach współpracy z naszą szkołą? Spośród niżej podanych form, proszę wybrać te, które Panu/-i odpowiadają."
+			type="manyofmany">
+			<answers>
+				<answer value="spotkania"
+					description="Spotkania i pogadanki z obecnymi uczniami na przykład na temat wybranej przeze mnie szkoły, wykonywanego zawodu, rozwijanych zainteresowań itp."></answer>
+				<answer value="zapraszanie"
+					description="Zapraszanie obecnych uczniów do miejsca mojej nauki, pracy, rozwijanych zainteresowań w celu zapoznania ich z ofertą szkoły, charakterem danego zawodu itp."></answer>
+				<answer value="aktywny udział"
+					description="Aktywny udział w ważnych uroczystościach szkoły, np. jubileuszach, Dniach Patrona, według propozycji danych przez szkołę lub własnych możliwości."></answer>
+				<answer value="sponsorowanie"
+					description="Sponsorowanie działalności szkoły, np. zafundowanie drobnych nagród dla uczniów biorących udział w organizowanych konkursach i imprezach, artykułów biurowych itp."></answer>
+				<answer value="inne" description="Inne.">
+					<extras>
+						<set>
+							<extra field="opis" query="Co?" type="textarea" />
+						</set>
+					</extras>
+				</answer>
+				<answer value="nic" description="Nic nie mogę zaoferować."></answer>
+			</answers>
+		</question>
+
+		<question id="p19"
+			query="Czy nasza szkoła dobrze przygotowała Pana/-nią do dalszej edukacji?"
+			type="oneofmany">
+			<answers>
+				<answer value="tak" description="Tak."></answer>
+				<answer value="raczej tak" description="Raczej tak."></answer>
+				<answer field="raczej nie" value="raczej nie" description="Raczej nie.">
+					<extras>
+						<set>
+							<extra field="uzasadnij" query="Proszę uzasadnij swoją odpowiedź:"
+								type="textarea" />
+						</set>
+					</extras>
+				</answer>
+				<answer value="nie" description="Nie.">
+					<extras>
+						<set>
+							<extra field="uzasadnij" query="Proszę uzasadnij swoją odpowiedź:"
+								type="textarea" />
+						</set>
+					</extras>
+				</answer>
+				<answer value="nie wiem" description="Nie wiem."></answer>
+			</answers>
+		</question>
+
+		<question id="p20"
+			query="Czy dobrze wspomina Pan/-i czas spędzony w naszej szkole?"
+			type="oneofmany">
+			<answers>
+				<answer value="tak" description="Tak."></answer>
+				<answer value="raczej tak" description="Raczej tak."></answer>
+				<answer value="raczej nie" description="Raczej nie."></answer>
+				<answer value="nie" description="Nie."></answer>
+				<answer value="nie wiem" description="Nie wiem."></answer>
+			</answers>
+		</question>
+
+		<question id="p21"
+			query="Co najbardziej utkwiło Panu/-i w pamięci podczas wszystkich lat spędzonych w naszej szkole?"
+			type="textarea" />
+
+		<question id="p22"
+			query="Czy wyraża Pan/-i zgodę na publikację zbieranych z różnych źródeł informacji o Pana/-i sukcesach i osiągnięciach?"
+			type="oneofmany">
+			<answers>
+				<answer value="tak" description="Tak."></answer>
+				<answer value="nie" description="Nie."></answer>
+			</answers>
+		</question>
+
+		<!-- <question id="p23" query="Czy wyraża Pan/-i zgodę na publikację danych 
+			uzyskanych o Panu/-i w niniejszej ankiecie?" type="oneofmany"> <answers> 
+			<answer value="tak" description="tak"></answer> <answer value="nie" description="nie"></answer> 
+			</answers> </question> -->
+
+	</questions>
+
+</inquiry>
