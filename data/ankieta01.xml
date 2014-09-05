@@ -5,7 +5,11 @@
 		<startdate>wrzesień, 2014 r.</startdate>
 		<title>ANKIETA "Testowa ankieta nr 1"</title>
 		<description>
+			<![CDATA[
 			Ankieta przeznaczona do testowania generatora ankiet.
+			<br/><br/>
+			Źródło ankiety: <a href='http://projects.mktest.pl/Inquiry/data/ankieta01.xml'>ankieta01.xml</a>
+			]]>
 		</description>
 		<footer>
 		</footer>
@@ -403,11 +407,6 @@
 				<answer value="nie" description="Nie."></answer>
 			</answers>
 		</question>
-
-		<!-- <question id="p23" query="Czy wyraża Pan/-i zgodę na publikację danych 
-			uzyskanych o Panu/-i w niniejszej ankiecie?" type="oneofmany"> <answers> 
-			<answer value="tak" description="tak"></answer> <answer value="nie" description="nie"></answer> 
-			</answers> </question> -->
 
 	</questions>
 

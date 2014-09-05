@@ -1,8 +1,18 @@
 <?php
+
+/**
+ * InquiryQuestionTypesOneofmany
+ *
+ * Klasa generatora dla typu 'Oneofmany' (wybór jednej z wielu zdefiniowanych odpowiedzi)
+ *
+ * @link        http://github.com/motarny/Inquiry/modules/display
+ * @author      Marcin Klimczuk
+ */
+
 class InquiryQuestionTypesOneofmany extends  InquiryQuestionTypesAbstract
 {
 
-    protected function prepareAnswersHtmlCode($questionObject)
+    protected function prepareAnswersDataForTemplate(InquiryQuestion $questionObject)
     {
         $answers = $questionObject->getXmlAnswers()->answer;
 
